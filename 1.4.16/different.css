@@ -1,0 +1,51 @@
+/* Different */
+/* It should be listed at the end of the CSS to override the original scyfin */
+/* Brighten the backdrop image */
+.backgroundContainer.withBackdrop {
+    background-color: rgba(0, 0, 0, 0.44) !important;
+}
+/* Re-position logo */
+.layout-desktop .detailLogo,
+.layout-tv .detailLogo {
+    right: 0 !important;
+    left: 5% !important;
+    top: 10vh !important;    
+    max-width: 55vh !important;
+    width: 122% !important; 
+}
+
+.layout-mobile .detailLogo.lazy.lazy-image-fadein-fast {
+    top: 17% !important;
+    margin-right: -20% !important;
+    max-width: 25vh !important;
+    width: 50% !important;
+    display: flex !important;
+}
+.fab, .raised {
+    background: none !important;
+    backdrop-filter: blur(var(--blur)) brightness(90%) !important;
+}
+.detailSection .trackSelections {
+    max-width: 40% !important;
+}
+
+.detailsGroupItem.directorsGroup,
+.detailsGroupItem.writersGroup,
+.detailsGroupItem.studiosGroup {
+    display: none !important;
+}
+.layout-desktop .emby-button-foreground {
+    height: 100% !important;
+    display: flex !important;
+    top: 0 !important;
+    justify-content: center !important; /* 水平居中 */
+    align-items: center !important; /* 垂直居中 */
+}
+.itemName.originalTitle {
+    color: white !important;
+    border-radius: .25em !important;
+    font-size: 14px !important;
+    margin: -.6em 0 1.2em 1.5em !important;
+    line-height: 2em !important;
+    backdrop-filter: blur(3px) brightness(90%) !important;
+}
